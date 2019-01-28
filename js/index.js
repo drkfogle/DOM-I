@@ -88,3 +88,19 @@ contact_p[2].textContent = (siteContent['contact']['email'])
 
 const footer = document.querySelector('footer')
 footer.textContent = (siteContent['footer']['copyright'])
+
+nav.forEach(nav => nav.style.color = "green");
+
+const navChild = document.createElement('a');
+navChild.href = '#';
+navChild.textContent = "Hello";
+const home = document.querySelector('.cta h1')
+home.appendChild(navChild);
+navChild.style.color = "red";
+
+const navChilddos = document.createElement('a');
+navChilddos.href = '#';
+navChilddos.textContent = "hola";
+const casa = document.querySelector('.main-content');
+casa.prepend(navChilddos);
+navChilddos.style.color = "red";
